@@ -1,0 +1,14 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'phishing-api'
+    static_configs:
+      - targets: ['host.docker.internal:8000']  # For WSL
+    metrics_path: /metrics
+    scrape_interval: 5s
+    scrape_timeout: 10s

@@ -1,0 +1,17 @@
+# Monitoring binaries (download locally)
+loki-linux-amd64
+promtail-linux-amd64
+prometheus-2.47.0.linux-amd64/
+
+# Source archives (keep downloads local)
+*.tar.gz
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+*.pkl
+phishing-env/
+
+# Logs
+*.log
