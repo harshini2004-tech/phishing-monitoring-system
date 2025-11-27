@@ -16,14 +16,15 @@ This system automatically detects phishing attempts in URLs and emails using AI,
 4. **Alerting**: Sends immediate notifications via email/SMS when threats are detected
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-** Quick Start**
 
 
-** Start the detection service**
+
+
+Start the detection service
 uvicorn unified_app:app --host 0.0.0.0 --port 8001 --reload
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- **Test with a suspicious URL**
+ Test with a suspicious URL
 curl -X POST "http://localhost:8001/predict" \
   -d '{"content": "http://fake-bank-login.com", "content_type": "url"}'
   
@@ -37,7 +38,7 @@ Logs: http://localhost:3100
 Alerts: Check your email/SMS
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-** Core Features**
+
 AI Detection: Identifies phishing URLs and emails automatically
 
 Real-time Monitoring: Watch live threat detection and system health
@@ -49,7 +50,7 @@ Instant Alerts: Get notified immediately when threats are found
 Web Dashboard: Beautiful Grafana interface to visualize everything
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-** Protection Coverage**
+
 Fake login pages & phishing websites
 
 Suspicious email content and patterns
